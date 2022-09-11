@@ -29,7 +29,7 @@ const inputElem = document.getElementById("input");
         }
 
         if (name === "Backspace") {
-            inputElem.setAttribute("inputmode", "text")
+            inputElem.setAttribute("inputmode", "email")
         
         }
       
