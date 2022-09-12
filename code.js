@@ -19,19 +19,21 @@ inputElem.addEventListener('keydown', (event) => {
     let name = event.key;
 
 
-    if (name >= "a" && name <= "z") {
-        console.log("hi there");
-        arrayTest.push(name);
+    arrayTest.push(name);
 
-        if (arrayTest.length === 2) {
-            inputElem.setAttribute("inputmode", "numeric")
-            console.log("success");
-    
-        }
-    }
+  /*   if (name >= "a" && name <= "z") {
+        console.log("hi there");
+        
+
+       
+    } */
 
    
+    if (arrayTest.length === 2) {
+        inputElem.setAttribute("inputmode", "numeric")
+        console.log("success");
 
+    }
 
 
 
