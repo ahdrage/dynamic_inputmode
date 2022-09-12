@@ -27,22 +27,24 @@ const inputElem = document.getElementById("input");
 
         if (name >= "a" && name <= "z") {
             arrayTest.push(name); 
+            console.log(arrayTest.length);
+            if (arrayTest.length === 2) {
+                inputElem.setAttribute("inputmode", "numeric")
+                
+               
+           }
         }
 
        
         
-        if (arrayTest.length === 3) {
-             inputElem.setAttribute("inputmode", "numeric")
-             
-            
-        }
+        
 
         if (name === "Backspace") {
             inputElem.setAttribute("inputmode", "text")
 
         } 
 
-        console.log(arrayTest);
+        
       
 
     })
