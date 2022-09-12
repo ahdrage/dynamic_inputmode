@@ -31,7 +31,7 @@ const inputElem = document.getElementById("input");
 
        
         
-        if (arrayTest.length === 2) {
+        if (arrayTest.length === 3) {
              inputElem.setAttribute("inputmode", "numeric")
              
             
