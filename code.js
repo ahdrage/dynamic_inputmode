@@ -29,7 +29,7 @@ inputElem.addEventListener('keydown', (event) => {
     } */
 
    
-    if (arrayTest.length === 2) {
+    if (arrayTest.length === 1) {
         inputElem.setAttribute("inputmode", "numeric")
         console.log("success");
 
