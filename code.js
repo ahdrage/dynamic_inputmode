@@ -24,27 +24,3 @@ inputElem.addEventListener('keydown', (event) => {
 
 })
 
-
-
-
-
-/* 
-
-
-
- const input = document.querySelector('input');
-
-  let keyCount = 0;
-
-  input.addEventListener('keyup', ({ key }) => {
-     ? keyCount++ : keyCount = 0;
-
-    if (keyCount === 2) {
-      input.type = 'number';
-    }
-  });
-
-
- */
-
-
