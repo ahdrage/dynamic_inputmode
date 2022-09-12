@@ -28,8 +28,9 @@ const inputElem = document.getElementById("input");
         if (name >= "a" && name <= "z") {
             arrayTest.push(name); 
             console.log(arrayTest.length);
-            if (arrayTest.length === 2) {
+            if (arrayTest.length == 2) {
                 inputElem.setAttribute("inputmode", "numeric")
+                console.log("now array has two values");
                 
                
            }
