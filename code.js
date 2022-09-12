@@ -17,15 +17,20 @@ const inputElem = document.getElementById("input");
         // Showing more than one digit at a time in display
 
         let name = event.key; 
-        console.log(name);
+       
+
+        if (name >= "c" &&  name <= "z") {
+            console.log("hi there");
+            arrayTest.push(name); 
+        }
         
-        arrayTest.push(name); 
+        
 
        
         
         if (arrayTest.length === 2) {
              inputElem.setAttribute("inputmode", "numeric")
-            console.log("success");
+           
         }
 
         if (name === "Backspace") {

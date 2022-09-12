@@ -1,3 +1,7 @@
+body {
+    font-size: 25px;
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -11,4 +15,6 @@
 #input {
     width: 200px;
     height: 40px;
+    font-size: 25px;
+    text-align: center;
 }
