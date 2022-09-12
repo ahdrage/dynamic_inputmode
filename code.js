@@ -23,14 +23,14 @@ const inputElem = document.getElementById("input");
 
        
         
-        if (arrayTest.length === 2) {
+        if (arrayTest.length = 2) {
              inputElem.setAttribute("inputmode", "numeric")
             console.log("success");
         }
 
         if (name === "Backspace") {
             inputElem.setAttribute("inputmode", "text")
-            
+
         }
       
 
