@@ -33,10 +33,10 @@ const inputElem = document.getElementById("input");
             
         }
 
-      /*   if (name === "Backspace") {
+        if (name === "Backspace") {
             inputElem.setAttribute("inputmode", "text")
 
-        } */
+        } 
       
 
     })
