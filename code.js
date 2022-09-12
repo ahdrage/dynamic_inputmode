@@ -14,10 +14,13 @@ inputElem.addEventListener('keydown', (event) => {
 
     if (array.length === 2) {
         inputElem.setAttribute("inputmode", "numeric")
-        console.log("now array has two values");
+       
     }
 
+    if (charPressed === "Backspace") {
+        inputElem.setAttribute("inputmode", "text")
     
+    }
     
 
 })
@@ -26,10 +29,7 @@ inputElem.addEventListener('keydown', (event) => {
 
 
 
-/* if (charPressed === "Backspace") {
-    inputElem.setAttribute("inputmode", "text")
-
-}
+/* 
 
 
 
