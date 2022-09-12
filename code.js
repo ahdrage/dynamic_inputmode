@@ -1,54 +1,29 @@
 
-
-
-let numberEntered = "";
-let arrayTest = [];
-
-
-
-
-
+let array = [];
 
 const inputElem = document.getElementById("input");
 
-// Looping through all divs and adding listener to change display when a button is clicked
+inputElem.addEventListener('keydown', (event) => {
+  
 
-    inputElem.addEventListener('keydown', (event) => {
-        // Showing more than one digit at a time in display
+    let charPressed = event.key;
 
-       
+    if (charPressed >= "a" && charPressed <= "z") {
+        array.push(charPressed);
+        console.log(array.length);
+    }
 
-        let name = event.key; 
-        
-        
-        
-
-       
-
-        if (name >= "a" && name <= "z") {
-            arrayTest.push(name); 
-            console.log(arrayTest.length);
-            if (arrayTest.length == 2) {
-                inputElem.setAttribute("inputmode", "numeric")
-                console.log("now array has two values");
-                
-               
-           }
-        }
-
-       
-        
-        
-
-        if (name === "Backspace") {
-            inputElem.setAttribute("inputmode", "text")
-
-        } 
-
-        
-      
-
-    })
+    if (array.length === 2) {
+        inputElem.setAttribute("inputmode", "numeric")
+        console.log("now array has two values");
+    }
 
 
-    
+    if (charPressed === "Backspace") {
+        inputElem.setAttribute("inputmode", "text")
+
+    }
+
+})
+
+
