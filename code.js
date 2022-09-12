@@ -1,11 +1,8 @@
 
 let array = [];
-
 const inputElem = document.getElementById("input");
-
 inputElem.addEventListener('keydown', (event) => {
   
-
     let charPressed = event.key;
 
     if (charPressed >= "a" && charPressed <= "z") {
@@ -19,11 +16,13 @@ inputElem.addEventListener('keydown', (event) => {
     }
 
 
-    if (charPressed === "Backspace") {
-        inputElem.setAttribute("inputmode", "text")
-
-    }
+   
 
 })
 
 
+/* if (charPressed === "Backspace") {
+    inputElem.setAttribute("inputmode", "text")
+
+}
+ */
