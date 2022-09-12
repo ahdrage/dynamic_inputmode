@@ -16,20 +16,24 @@ const inputElem = document.getElementById("input");
     inputElem.addEventListener('keydown', (event) => {
         // Showing more than one digit at a time in display
 
-        console.log(arrayTest);
+       
 
         let name = event.key; 
         
         
-        arrayTest.push(name); 
+        
 
-        console.log(arrayTest.length);
+       
+
+        if (name >= "a" && name <= "z") {
+            arrayTest.push(name); 
+        }
 
        
         
         if (arrayTest.length === 2) {
              inputElem.setAttribute("inputmode", "numeric")
-             console.log("two array");
+             
             
         }
 
@@ -37,6 +41,8 @@ const inputElem = document.getElementById("input");
             inputElem.setAttribute("inputmode", "text")
 
         } 
+
+        console.log(arrayTest);
       
 
     })
