@@ -19,19 +19,20 @@ const inputElem = document.getElementById("input");
         let name = event.key; 
        
 
-        if (name >= "c" &&  name <= "z") {
+        if (name >= "a" &&  name <= "z") {
             console.log("hi there");
             arrayTest.push(name); 
         }
         
-        
+        if (arrayTest.length === 2) {
+            inputElem.setAttribute("inputmode", "numeric")
+            console.log("success");
+          
+       }
 
        
         
-        if (arrayTest.length === 2) {
-             inputElem.setAttribute("inputmode", "numeric")
-           
-        }
+        
 
         if (name === "Backspace") {
             inputElem.setAttribute("inputmode", "email")
